@@ -13,6 +13,14 @@
 		DF53029D2B451EEF009CCE23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF53029B2B451EEF009CCE23 /* Main.storyboard */; };
 		DF53029F2B451EF1009CCE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF53029E2B451EF1009CCE23 /* Assets.xcassets */; };
 		DF5302A22B451EF1009CCE23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5302A02B451EF1009CCE23 /* LaunchScreen.storyboard */; };
+		DF5302AD2B451F4E009CCE23 /* ModelSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5302AC2B451F4E009CCE23 /* ModelSetting.swift */; };
+		DF5302AF2B45208C009CCE23 /* VMSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5302AE2B45208C009CCE23 /* VMSetting.swift */; };
+		DF5302B32B4532FA009CCE23 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5302B12B4532FA009CCE23 /* SettingTableViewCell.swift */; };
+		DF5302B42B4532FA009CCE23 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5302B22B4532FA009CCE23 /* SettingTableViewCell.xib */; };
+		FD5C6D3B2B4A6B1800B5D093 /* CellwithSwitchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C6D392B4A6B1800B5D093 /* CellwithSwitchBtn.swift */; };
+		FD5C6D3C2B4A6B1800B5D093 /* CellwithSwitchBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5C6D3A2B4A6B1800B5D093 /* CellwithSwitchBtn.xib */; };
+		FD5C6D3F2B4AAF3D00B5D093 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C6D3D2B4AAF3D00B5D093 /* Cell.swift */; };
+		FD5C6D402B4AAF3D00B5D093 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5C6D3E2B4AAF3D00B5D093 /* Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		DF53029E2B451EF1009CCE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5302A12B451EF1009CCE23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF5302A32B451EF1009CCE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF5302AC2B451F4E009CCE23 /* ModelSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSetting.swift; sourceTree = "<group>"; };
+		DF5302AE2B45208C009CCE23 /* VMSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMSetting.swift; sourceTree = "<group>"; };
+		DF5302B12B4532FA009CCE23 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		DF5302B22B4532FA009CCE23 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		FD5C6D392B4A6B1800B5D093 /* CellwithSwitchBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellwithSwitchBtn.swift; sourceTree = "<group>"; };
+		FD5C6D3A2B4A6B1800B5D093 /* CellwithSwitchBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellwithSwitchBtn.xib; sourceTree = "<group>"; };
+		FD5C6D3D2B4AAF3D00B5D093 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		FD5C6D3E2B4AAF3D00B5D093 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		DF5302942B451EEF009CCE23 /* SettingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DF5302AB2B451F24009CCE23 /* ViewModelSetting */,
+				DF5302AA2B451F11009CCE23 /* ViewSeting */,
+				DF5302A92B451EF8009CCE23 /* Model */,
 				DF5302952B451EEF009CCE23 /* AppDelegate.swift */,
 				DF5302972B451EEF009CCE23 /* SceneDelegate.swift */,
 				DF5302992B451EEF009CCE23 /* ViewController.swift */,
@@ -65,6 +84,43 @@
 				DF5302A32B451EF1009CCE23 /* Info.plist */,
 			);
 			path = SettingDemo;
+			sourceTree = "<group>";
+		};
+		DF5302A92B451EF8009CCE23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF5302AC2B451F4E009CCE23 /* ModelSetting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF5302AA2B451F11009CCE23 /* ViewSeting */ = {
+			isa = PBXGroup;
+			children = (
+				DF5302B02B4532C4009CCE23 /* SettingTableViewCell */,
+			);
+			path = ViewSeting;
+			sourceTree = "<group>";
+		};
+		DF5302AB2B451F24009CCE23 /* ViewModelSetting */ = {
+			isa = PBXGroup;
+			children = (
+				DF5302AE2B45208C009CCE23 /* VMSetting.swift */,
+			);
+			path = ViewModelSetting;
+			sourceTree = "<group>";
+		};
+		DF5302B02B4532C4009CCE23 /* SettingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DF5302B12B4532FA009CCE23 /* SettingTableViewCell.swift */,
+				DF5302B22B4532FA009CCE23 /* SettingTableViewCell.xib */,
+				FD5C6D392B4A6B1800B5D093 /* CellwithSwitchBtn.swift */,
+				FD5C6D3A2B4A6B1800B5D093 /* CellwithSwitchBtn.xib */,
+				FD5C6D3D2B4AAF3D00B5D093 /* Cell.swift */,
+				FD5C6D3E2B4AAF3D00B5D093 /* Cell.xib */,
+			);
+			path = SettingTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5302A22B451EF1009CCE23 /* LaunchScreen.storyboard in Resources */,
+				FD5C6D402B4AAF3D00B5D093 /* Cell.xib in Resources */,
 				DF53029F2B451EF1009CCE23 /* Assets.xcassets in Resources */,
+				DF5302B42B4532FA009CCE23 /* SettingTableViewCell.xib in Resources */,
 				DF53029D2B451EEF009CCE23 /* Main.storyboard in Resources */,
+				FD5C6D3C2B4A6B1800B5D093 /* CellwithSwitchBtn.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5302B32B4532FA009CCE23 /* SettingTableViewCell.swift in Sources */,
+				DF5302AD2B451F4E009CCE23 /* ModelSetting.swift in Sources */,
 				DF53029A2B451EEF009CCE23 /* ViewController.swift in Sources */,
 				DF5302962B451EEF009CCE23 /* AppDelegate.swift in Sources */,
+				FD5C6D3B2B4A6B1800B5D093 /* CellwithSwitchBtn.swift in Sources */,
+				FD5C6D3F2B4AAF3D00B5D093 /* Cell.swift in Sources */,
+				DF5302AF2B45208C009CCE23 /* VMSetting.swift in Sources */,
 				DF5302982B451EEF009CCE23 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,16 @@
 
 import UIKit
 
-class SearchBarTableViewCell: UITableViewCell {
+class CellwithSwitchBtn: UITableViewCell {
 
+    @IBOutlet var images: UIImageView!
+    @IBOutlet var subTitleLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var switchView: UISwitch!
     
-    
-    static var identifier = "SearchBarTableViewCell"
+    static var identifier = "CellwithSwitchBtn"
     static func nib() -> UINib{
-        return UINib(nibName: "SearchBarTableViewCell", bundle: nil)
+        return UINib(nibName: "CellwithSwitchBtn", bundle: nil)
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +27,12 @@ class SearchBarTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func configure(with models: SettingModel){
+        subTitleLabel.text = models.subTitle
+        descriptionLabel.text = models.description
+        images.image = UIImage(named: models.imageView ?? "")
+        switchView.isOn = true
     }
     
 }

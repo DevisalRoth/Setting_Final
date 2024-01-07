@@ -9,6 +9,15 @@ import UIKit
 
 class Cell: UITableViewCell {
 
+    @IBOutlet var subTitleLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var images: UIImageView!
+    @IBOutlet var status: UILabel!
+    static var identifier = "Cell"
+    static func nib() -> UINib{
+        return UINib(nibName: "Cell", bundle: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -16,8 +25,14 @@ class Cell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
+    }
+    
+    func configuration(with models: SettingModel){
+        self.subTitleLabel.text = models.subTitle
+        self.descriptionLabel.text = models.description
+        self.images.image = UIImage(named: models.imageView ?? "")
+        self.status.text = models.status
     }
     
 }
